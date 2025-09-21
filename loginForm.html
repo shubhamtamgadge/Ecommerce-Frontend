@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopify | Login</title>
+    <link rel="stylesheet" href="login.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    
+</head>
+<body>
+    
+        <div class="wrapper">
+
+    
+           <section class="login">
+
+                <form>
+
+                
+                    <div class="shopify">
+                        <div id="shopifyname" class="">Shopify</div>
+                    </div>
+
+
+                    <div class="inn" id="name">
+
+                        <label for="username" class="label">Name</label>
+                        <input class="input" id="username" type="text" placeholder="Enter Name">
+
+                    </div>
+
+                    <div class="inn">
+
+                        <label for="email" class="label">Email</label>
+                        <input class="input" id="email" name="email"  type="email" placeholder="Enter Email">
+
+                    </div>
+                    
+                    <div class="inn">
+                        <label for="password" class="label">Password</label>
+                    <input class="input" id="password" name="password" type="password" placeholder="Enter Password">
+
+                    </div>
+
+
+                    <div >
+                        <button id="loginButton" class="signIn" onclick="login()">Login</button>
+                    </div>
+
+                    <div class="InvalidCredentials">
+                        <p class="">* Invalid credentials..Try Again *</p>
+                    </div>
+
+                    <div class="signwith">
+                        <p>New to Shopify? <Span class="newToShopify"><a href="#" 
+                        onclick="document.querySelector('#name').style.display = 'block';document.querySelector('#loginButton').innerText ='Sign up';"
+                            >Sign up</a></Span></p>
+                    </div>
+
+
+                </form>
+
+           </section>
+
+    </div>
+
+
+
+
+
+
+
+    <script src="api.js"></script>
+
+</body>
+</html>

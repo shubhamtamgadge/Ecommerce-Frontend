@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html  lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"/>
+
+</head>
+<body class="scroll-smooth">
+    <div class="wrapper w-[100vw] h-[100vh] bg-gray-200 overflow-x-hidden ">
+
+        <!-- navBar -->
+
+        <nav class="bg-white w-[100vw] h-[60px] flex justify-between items-center shadow-sm mb-4 max-sm:justify-center">
+            <div class="text-4xl ml-[60px] font-[Lora] " >Shopify</div>
+            <div class="flex gap-4 scroll-smooth max-sm:hidden">
+                <a class="hover:text-neutral-500 " href="#ClothingItems">Clothing</a>
+                <a class="hover:text-neutral-500 " href="#TrendingItems">Gadgets</a>
+                <a class="hover:text-neutral-500" href="#ElectronisItems">Electronics</a>
+            </div>
+            <div class="flex gap-6  mr-[45px] text-lg max-sm:hidden relative" >
+              
+                <button onclick="window.location.href='loginForm.html'"
+                class="bg-blue-600 text-white px-[22px] py-1 pb-[6px] rounded-md hover:bg-blue-500">login</button>
+                
+                <a href="cart.html">
+                    <img class="size-6 mt-1"
+                    src="images/shopping-cart (1).png" alt="">
+            
+                </a>
+
+                <div id="cartItems" class="cartItems absolute bg-green-700 size-[13px] rounded-full flex justify-center items-center right-[-4px] top-[2px]">
+                    <div id="items"  class="text-white  text-[10px] ">0</div>
+                </div>
+          
+            </div>
+        </nav>
+
+        <!-- HeroBanner -->
+
+        <div id="bannerWrapper" class="flex flex-col items-center justify-center relative bg-white">
+
+            <div id="imageContainer" class="flex  transition-all duration-500 ease-out ">
+                <img class="banners" src="images/img4.png" alt="">
+                <img class="banners" src="images/img1.png" alt="">
+                <img class="banners" src="images/img2.png" alt="">
+                <img class="banners" src="images/img3.png" alt="">
+          
+            </div>
+
+            <div class="flex gap-2 mt-2 mb-2 items-center">
+                <div class="b1 rounded-full size-[10px] bg-gray-500"></div>
+                <div class="b2 rounded-full size-2 bg-gray-400"></div>
+                <div class="b3 rounded-full size-2 bg-gray-400"></div>
+                <div class="b4 rounded-full size-2 bg-gray-400"></div>
+
+            </div>
+
+           <div class="absolute flex justify-between w-[100vw]">
+
+            <div id="prevButton" class="bg-white w-11 h-24 rounded-r-[5px] shadow-sm flex justify-center items-center" >
+                <i class="fa-solid fa-angle-left " style="color: #6e798c;"></i>
+            </div>
+            <div id="nextButton" class="bg-white w-11 h-24 rounded-l-[5px] shadow-sm flex justify-center items-center">
+                <i class="fa-solid fa-angle-right" style="color: #6e798c;"></i>
+            </div>
+           </div>
+            
+
+        </div>
+
+        <!-- show products -->
+
+        <div class="flex flex-col justify-center items-center mt-5 w-[100%]">
+          
+            <!-- <h2>Electronics</h2> -->
+            <div id="TrendingItems" class="w-[82%] h-[425px] flex bg-white  flex-row flex-wrap justify-evenly items-center shadow-sm max-2xl:h-auto"></div>
+               
+            <div class="h-5"></div>
+
+            <!-- <h2>Clothing & Styling</h2> -->
+            <!-- <h2>Clothing & Styling</h2> -->
+            <div id="ClothingItems" class="w-[82%] h-[425px] flex bg-white  flex-row flex-wrap justify-evenly items-center shadow-sm max-2xl:h-auto"></div>
+        
+            <div class="h-5"></div>
+
+            <!-- <h2>Gadgest</h2> -->
+            <!-- <h2>Clothing & Styling</h2> -->
+            <div id="ElectronisItems" class="w-[82%] h-[425px] flex bg-white  flex-row flex-wrap justify-evenly items-center shadow-sm max-2xl:h-auto"></div>
+ 
+            <div class="h-5"></div>
+        </div>
+
+
+        <!-- Footer Section -->
+       
+    
+        <div class="w-[100%] h-64 bg-zinc-800 flex justify-evenly relative">
+            <div class=" w-[230px] h-[180px] pt-7 ">
+                <h6 class="mb-1 text-stone-500 text-sm">ABOUT</h6>
+                <p class="text-white font-semibold text-sm">Contact Us</p>
+                <p class="text-white font-semibold text-sm">About Us</p>
+                <p class="text-white font-semibold text-sm">Careers</p>
+                <p class="text-white font-semibold text-sm">Shopify Stories</p>
+                <p class="text-white font-semibold text-sm">Press</p>
+            </div>
+
+             <div class=" w-[230px] h-[180px] pt-7">
+                <h6 class="mb-1 text-stone-500 text-sm">GROUP COMPANIES</h6>
+                <p class="text-white font-semibold text-sm">Flipcart</p>
+                <p class="text-white font-semibold text-sm">Amazon</p>
+                <p class="text-white font-semibold text-sm">Myntra</p>
+           
+            </div>
+
+             <div class=" w-[230px] h-[180px] pt-7">
+                <h6 class="mb-1 text-stone-500 text-sm">HELP</h6>
+                <p class="text-white font-semibold text-sm">Payment</p>
+                <p class="text-white font-semibold text-sm">Shipping</p>
+                <p class="text-white font-semibold text-sm">Cancellation & Returns</p>
+                <p class="text-white font-semibold text-sm">FAQ</p>
+              
+            </div>
+
+             <div class=" w-[230px] h-[180px] pt-7">
+                <h6 class="mb-1 text-stone-500 text-sm">Office Address</h6>
+                <p class="text-white font-semibold text-sm">Shopify Internet Private Limited</p>
+                <p class="text-white font-semibold text-sm">Canel Road, Lane no.9</p>
+                <p class="text-white font-semibold text-sm">Karve Nagar</p>
+                 <p class="text-white font-semibold text-sm">Pune, 411052</p>
+                <p class="text-white font-semibold text-sm">Maharashtra, India</p>
+    
+                
+            </div>
+
+            <div class="absolute bottom-8 "> 
+                    <h6 class="mt-6 text-stone-500 text-sm mb-3">Socials</h6>
+                    <div class="flex gap-[10px] items-center">
+                        <div class="size-10  relative">
+                            <img class="absolute size-[39px]  "
+                            src="images/instagram (1).png" alt="">
+                        </div>
+
+                        <div class="size-10  relative">
+                            <img class="absolute size-[34px] top-1"
+                            src="images/facebook (1).png" alt="">
+                        </div>
+
+                        <div class="size-10  relative">
+                            <img class="absolute size-[34px] top-1"
+                            src="images/youtube.png" alt="">
+                        </div>
+
+                        <div class="size-10  relative ">
+                            <img class="absolute size-[34px] top-1"
+                            src="images/twitter (1).png" alt="">
+                        </div>
+        
+                    </div>
+
+            </div>
+            
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="index.js"></script>
+    <script src="api.js"></script>
+    <script src="cart.js"></script>
+
+</body>
+</html> 

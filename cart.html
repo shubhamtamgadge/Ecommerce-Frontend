@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="wrapper-cart w-[100vw] h-[100vh] bg-gray-200 overflow-x-hidden ">
+
+                <!-- navBar -->
+
+        <nav class="bg-white w-[100vw] h-[60px] flex justify-between items-center shadow-sm mb-4 max-sm:justify-center">
+            <div id="shopifyButton" onclick="window.location.href='index.html'" 
+            class="text-4xl ml-[60px] font-[Lora] cursor-pointer" >Shopify</div>
+            <div class="flex gap-4 max-sm:hidden">
+                <a class="hover:text-neutral-500" href="#">Clothing</a>
+                <a class="hover:text-neutral-500" href="#">Gadgets</a>
+                <a class="hover:text-neutral-500" href="#">Electronics</a>
+            </div>
+            <div class="flex gap-6  mr-[45px] text-lg max-sm:hidden relative" >
+              
+                <button onclick="window.location.href='loginForm.html'"
+                class="bg-blue-600 text-white px-[22px] py-1 pb-[6px] rounded-md hover:bg-blue-500">login</button>
+                
+                <a href="#">
+                    <img class="size-6 mt-1"
+                    src="images/shopping-cart (1).png" alt="">
+            
+                </a>
+
+                <div id="cartItems" class="cartItems absolute bg-green-700 size-3 rounded-full flex justify-center items-center right-[-4px] top-[3px]">
+                    <div id="items"  class="text-white  text-[10px] ">1</div>
+                </div>
+          
+            </div>
+        </nav>
+
+        <!-- cart item container -->
+
+        <div class="cartContainer w-[100%] flex flex-col justify-center items-center mb-20">
+
+            <div class="allItems w-[65%] h-auto bg-white shadow-lg flex flex-col justify-center items-center" >
+ 
+                <!-- oneProductCart -->
+
+
+<!-- 
+                 <div class="w-[90%] h-44 flex border-b border-gray-300 py-2 px-2 ">
+                    <div class="w-60 h-[159px] overflow-hidden">
+                        <img class="w-60 h-auto object-cover "
+                        src="https://cdn.pixabay.com/photo/2014/08/26/21/49/shirts-428618_640.jpg" alt="">
+                      
+                    </div>
+                    <div class="product ml-7 mt-2">
+                        <h4 class="text-[18px] font-semibold mt-1">${product.name} </h4>
+                        <p class="truncate my-0">${product.description}</p>
+                        <p class="font-semibold mb-1">₹${product.price}</p>
+
+                        <div class="flex w-32 bg-[#238306] mt-4 items-center rounded-[3px]">
+                            <button class="px-3 border-r text-white  font-bold text-lg ">-</button>
+                            <div class="px-6 text-white py-1 font-semibold text-lg">0</div>
+                            <button class="px-3 border-l text-white  font-bold text-lg ">+</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                 <div class="w-[90%] h-44 flex border-b border-gray-300 py-2 px-2 ">
+                    <div class="w-60 h-[159px] overflow-hidden">
+                        <img class="w-60 h-auto object-cover "
+                        src="https://cdn.pixabay.com/photo/2014/08/26/21/49/shirts-428618_640.jpg" alt="">
+                      
+                    </div>
+                    <div class="product ml-7 mt-2  ">
+                        <h4 class="text-[18px] font-semibold mt-1">${product.name} </h4>
+                        <p class="truncate my-0">${product.description}</p>
+                        <p class="font-semibold mb-1">₹${product.price}</p>
+
+                        <div class="w-[100%] flex  items-end ">
+                            <div class="flex w-32 bg-[#238306] mt-4 items-center rounded-[3px]">
+                                <button onclick="changeQuantity(index, -1)" class="px-3 border-r text-white  font-bold text-lg ">-</button>
+                                <div id="updateQuantity" class="px-6 text-white py-1 font-semibold text-lg">0</div>
+                                <button onclick="changeQuantity(index, 1)" class="px-3 border-l text-white  font-bold text-lg ">+</button>
+                            </div>
+
+                            <button class="w-28 h-9 ml-6 left-[450px] bg-[#e21f1f]  text-white rounded-[3px]">REMOVE</button>
+
+                        </div>
+
+                        
+                    </div>
+                </div>
+
+ -->
+
+
+            </div>
+
+            <div class="placeOrder w-[65%] h-20 bg-white  flex flex-row justify-between items-center" >
+                <div class="font-semibold ml-8 text-xl flex w-auto justify-between ">
+
+                    <div class="text-center">Total Amount</div>
+                    <div class="totalAmount whitespace-pre"></div>
+
+                </div>
+                
+                <button onclick="placeOrder()"
+                class="w-52 bg-[#238306] h-12 text-white font-semibold mr-8">PLACE ORDER</button>
+            </div>
+
+
+        </div>
+
+
+
+
+    </div>
+    
+
+    <script src="cart.js"></script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</body>
+</html>

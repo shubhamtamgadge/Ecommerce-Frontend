@@ -1,0 +1,235 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap; 
+ 
+    align-content: center;
+
+    justify-content: center;
+
+    background-color: #e0e5ec71 ;
+  
+
+}
+
+.shopify{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4px;
+
+
+}
+
+
+
+
+.login{
+    width: 350px;
+    min-height: 380px;
+    color: rgb(71 85 105) /* #475569 */;
+   
+    padding: 30px;
+    padding-top: 35px;
+    border-radius: 20px;
+   
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 10px 10px 20px #babecc, -10px -10px 20px #ffffff;
+
+}
+
+.input{
+    border: none;
+    width: 98%;
+    height: 35px;
+    padding-left: 15px;
+    padding-top: 3px;
+    border-radius: 20px;
+    margin-top: 7px;
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+ 
+    box-shadow: inset  -3px -3px 6px #ffffff,inset 3px 3px 6px #babecc;
+ 
+
+
+    
+}
+
+
+.label{
+    margin-top: 15px;
+    font-size:14px;
+    color: rgba(0, 0, 0, 0.578);
+    
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.inn{
+
+    display: flex; 
+    flex-direction: column;
+}
+
+#name{
+    display: none;
+}
+
+#shopifyname{
+    font-family: Lora;
+    font-size: 1.875rem /* 30px */;
+    line-height: 2.25rem /* 36px */;
+}
+
+
+#loginButton{
+    text-align: center;
+}
+
+.newToShopify{
+    color: rgb(59 130 246) /* #3b82f6 */;
+}
+
+.newToShopify a {
+    color: rgb(59, 130, 246);   /* link color */
+    text-decoration: none;      /* remove underline */
+}
+
+.rem{
+    border: none;
+    border-radius: 20px;
+    accent-color: rgba(124, 120, 120, 0.093);
+    
+    box-shadow: 2px 2px 4px #babecc, -2px -2px 4px #ffffff;
+    
+    /* width: 15px; */
+}
+
+
+.remember{
+
+    display: flex;
+    margin-top: 15px;
+
+    align-items:center
+
+}
+.label2{
+    font-size:12px;
+    color: #9da0aa;
+   font-family:Arial, Helvetica, sans-serif; 
+   margin-right: 45px;
+   margin-left: 9px;
+}
+
+
+
+.forget{
+
+  font-size:12px;
+    color: rgba(0, 0, 0, 0.578);
+   font-family:Arial, Helvetica, sans-serif; 
+   color: #9da0aa;
+   text-decoration:none;
+
+}
+
+.signIn{
+    margin-top: 30px;
+    width: 98%;
+    height: 30px;
+    border: none;
+    background-color: rgba(66, 64, 64, 0.76);
+    color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 5px 6px 8px #8c8f98;
+
+}
+
+
+
+.signwith{
+   
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+     font-size: smaller;
+      color: rgba(0, 0, 0, 0.408);
+    font-family:Arial, Helvetica, sans-serif; 
+}
+
+
+.google{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+
+}
+
+.face{
+     position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0);
+
+    box-shadow: 4px 4px 8px #babecc, -4px -4px 8px #ffffff;
+}
+
+.faceimg{
+    position: absolute;
+    top:7px;
+    left: 7px;
+    /* right: 10px; */
+    width: 25px;
+}
+
+.googimg{
+
+    position: absolute;
+    top:10px;
+    left: 10.5px;
+    /* right: 10px; */
+    width: 19px;
+}
+
+.linkimg{
+    position: absolute;
+    top:10px;
+    left: 10.5px;
+    /* right: 10px; */
+    width: 19px;
+
+}
+
+
+.twitimg{
+
+    position: absolute;
+    top:11px;
+    left: 11px;
+    /* right: 10px; */
+    width: 18px;
+
+}
+
+.InvalidCredentials{
+    width: 100%;
+    margin-top: 8px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    font-size:smaller;
+    color:rgba(243, 55, 55, 0.811);
+
+}
