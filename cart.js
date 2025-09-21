@@ -228,8 +228,7 @@ async function saveOrderItems(razorpayOrderId){
 
 
     try{
-        // const responce = await fetch(`${BASE_URL}/orders/saveOrder`);
-        // const products = await responce.json();
+     
         const BASE_URL = "http://localhost:8080";
 
         const responce = await fetch(`${BASE_URL}/orders/saveOrder`, {
